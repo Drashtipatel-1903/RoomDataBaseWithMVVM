@@ -1,0 +1,18 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="3dp"
+        android:id="@+id/toolbar"
+        app:menu="@menu/toolbarmenu"
+        app:title="@string/app_name"
+        app:navigationIcon="@drawable/back"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

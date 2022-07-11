@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:id="@+id/llMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                tools:text="1"
+                android:layout_marginRight="10dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:textSize="12sp"
+                tools:text="Drashti"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                tools:text="Drashti@gmail.com"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivEdit"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="image"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="center"
+                android:src="@drawable/edit" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivDelete"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="image"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="center"
+                android:src="@drawable/delete" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>
